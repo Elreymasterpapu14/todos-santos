@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Viajes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            margin: 0;
+            background-image: url("D:\ilustracion-plana-dia-todos-santos-espanol_23-2149679490 (1).jpg"); /* Ruta de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+        }
+        .form-container {
+            background-color: rgba(172, 233, 153, 0.8); /* Fondo blanco semitransparente */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="date"], textarea, input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button.clear {
+            background-color: #dc3545;
+        }
+        button.clear:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Formulario de Todos santos</h2>
+        <form action="mailto:cbeatrizfp@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="nombre">Nombre del usuario</label>
+                <input type="text" id="NOMBRE" name="NOMBRE" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="donde pasaras todos santos?">Destino</label>
+                <input type="text" id="DESTINO" name="destination" required>
+            </div>
+            <div class="form-group">
+                <label for="fin de viaje">Fecha de fin</label>
+                <input type="date" id="Fecha de fin" name="Fecha de fin" required>
+            </div>
+            <div class="form-group">
+                <label for="age-range">Rango de edad</label>
+                <input type="text" id="age-range" name="rango de edad" placeholder="Ej. 25-35" required>
+            </div>
+            <div class="form-group">
+                <label for="num-people">Número de personas</label>
+                <input type="number" id="num-people" name="numero de viajeros" min="1" required>
+            </div>
+            <div class="form-group">
+                <label>LE GUSTO LA PAGINA WEB</label>
+                    
+                    <input type="radio" id="N" name="niños" value="SI">
+                     <label for="">SI</label>
+                     <input type="radio" id="N" name="niños" value="NO">
+                    <label for="masculino">NO</label>
+                    <br>
+            </div>
+            <div class="form-group">
+                <div>
+  
+                </div>
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="cometario">Comentarios adicionales</label>
+                <textarea id="comments" name="comentario" rows="4"></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="submit">Enviar</button>
+                <button type="button" class="clear" onclick="clearForm()">Borrar</button>
+            </div>
+    <header>
+        <div class="container">
+            <h1>Festividad de Todos Santos en Bolivia</h1>
+            <nav>
+                <ul>
+                 <li><a href="D:\ofimáticahoy14.html">INICIO</a></li>
+                 <li><a href="D:\ofimaticahoy12.html">GALERÍA</a></li>
+                 <li><a href="D:\ofimatica11.html">VIDEO</a></li>
+                 <li><a href="D:\OFIMATICA AUDIO.HTML">AUDIO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        </form>
+    </div>
+
+  
+</body>
+</html>
+
+
+
+
